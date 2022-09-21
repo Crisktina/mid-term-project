@@ -15,7 +15,16 @@ Opto por acabar la estructura html y luego continuar con css de la home.
 He acabado el html y css de la home, la versión para móvil. Me falta acabar de hacer funcional el menu hamburger ya que no he conseguido hacer el desplegable.
 Hago el html de la página de proyectos y formulario de contacto.
 
+
 Dia 3 - 21 septiembre
+Objetivo de hoy:
+
+1. Arreglar y hacer funcional el menu hamburger.
+2. Hacer el tema del fetch.
+3. Empezar con mediaquery de desktop
+
+Con ayuda en grupo y con Diego guiandonos, hemos hecho el fetch de los posts. Ha sido un reto porque me cuesta mucho las funciones async await.
+He consegido acabar el menu hamburger de la versión para móvil.
 
 Dia 4 - 22 septiembre
 
