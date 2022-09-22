@@ -18,8 +18,8 @@ Hago el html de la página de Projects y Contact US.
 
 
 Dia 3 - 21 septiembre
-Objetivo de hoy:
 
+Objetivo de hoy:
 1. Arreglar y hacer funcional el menu hamburger.
 2. Hacer el tema del fetch.
 3. Empezar con mediaquery de desktop
@@ -33,10 +33,11 @@ Empiezo con la adaptación a desktop.
 Dia 4 - 22 septiembre
 
 Objetivo de hoy:
-1. Página projects js
-2. Acabar la adaptación a desktop.
-3. Comprovar que todo funciona en todos los 2 dispositivos.
-4. Subir la web a Netlify.
+1. Página projects post principal js
+2. Formulario mail Suscribe js
+3. Acabar la adaptación a desktop.
+4. Comprovar que todo funciona en los 2 dispositivos.
+5. Hacer el deployment en la web de Netlify.
 
 
 Dia 5 - 23 septiembre

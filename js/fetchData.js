@@ -7,7 +7,7 @@
 
 // 2. función para renderizar la data
 
-// función asincronica
+// función asincrona para los 3 posts
 
 async function getData() {
     const data = ["https://jsonplaceholder.typicode.com/posts?_limit=3"];
@@ -32,8 +32,8 @@ async function renderData() {
                         <img class="card-project-img" src="project-assets/projects-section/${item.id}.jpg" alt="Project image with diferent shapes and colors"/>
                     </div>
                     <div class="card-project-text">
-                        <h3>${item.title.slice(0, 15)}</h3>
-                        <p>${item.body.slice(0, 35)}</p>
+                        <h3>${item.title.slice(0, 1).toUpperCase()}${item.title.slice(1, 15)}</h3>
+                        <p>${item.body.slice(0, 1).toUpperCase()}${item.body.slice(1, 35)}.</p>
                         <a class="learn-more" href="projects.html">Learn More</a>
                     </div>
                 </div>`;

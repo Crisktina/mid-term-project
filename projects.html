@@ -27,17 +27,20 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+            <a href="/contact.html" class="contact-us-button mov-version-hidden" id="touch-button">Contact Us</a>
         </nav>
-        <a href="/contact.html" class="contact-us-button mov-version-hidden" id="touch-button">Contact Us</a>
+
     </header>
     <!-- 1. Section PROJECT 1 -->
-    <div class="section-box no-margin">
+    <div class="section-box no-margin project-1">
         <div class="contact-box-box">
             <h1 class="projects-principal-title">Simplify</h1>
-            <h4>UI Design & App Development</h4>
-            <div class="project-date-box">
-                <div class="date-text-1">Completed on</div>
-                <div class="date-text-2">2/2/22</div>
+            <div class="contact-subtitle-box">
+                <h4>UI Design & App Development</h4>
+                <div class="project-date-box">
+                    <div class="date-text-1">Completed on</div>
+                    <div class="date-text-2">2/2/22</div>
+                </div>
             </div>
         </div>
         <div class="img-box">
@@ -96,16 +99,16 @@
             </div>
         </div>
     </div>
-    <!-- Section FORM  -->
+    <!-- 6. Section FORM  -->
     <div class="section-box section-form">
         <div class="section-form-in">
             <h2>Do you have any questions?</h2>
             <p>Let us help you!</p>
             <div class="form-buttons-box">
-                <form class="form-buttons" action="">
+                <form class="form-buttons" id="submit" action="">
                     <div class="imput-text-button">
                         <div class="imput-text-button-icon"></div>
-                        <input type="email" minlength="6" maxlength="200" placeholder="Enter your email" class="imput-text-button-text" required />
+                        <input id="email-suscribe" type="email" minlength="6" maxlength="200" placeholder="Enter your email" class="imput-text-button-text" required />
                     </div>
                     <input type="submit" value="Suscribe" data-wait="Please wait..." class="suscribe-button" />
                 </form>
@@ -114,7 +117,7 @@
     </div>
     <!-- FOOTER  -->
     <footer class="section-box footer-box">
-        <div class="section-box-box">
+        <div class="section-box-box footer-box-box">
             <div class="footer-logo">
                 <img src="project-assets/logos/circle.svg" alt="Circle logo" />
                 <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
@@ -129,8 +132,10 @@
             </div>
         </div>
     </footer>
+    <script src="/js/fetchDataMainPost.js"></script>
     <script src="/js/fetchData.js"></script>
     <script src="/js/nav.js"></script>
+    <script src="/js/suscribe.js"></script>
 </body>
 
 </html>

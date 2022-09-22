@@ -16,7 +16,7 @@
             <a class="nav-box-logo" href="index.html"></a>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a></li>
+                    <a href="index.html" class="nav-link current-link">Home</a></li>
                 <li class="nav-item">
                     <a href="projects.html" class="nav-link">Projects</a></li>
                 <li class="nav-item">
@@ -32,7 +32,7 @@
 
     </header>
     <!-- 1. Section PRESENTATION -->
-    <div class="section-box no-margin">
+    <div class="section-box no-margin presentation-box">
         <div class="presentation-text-content">
             <h1>Empower Your Business With Stunning Design!</h1>
             <p>
@@ -44,9 +44,9 @@
             </div>
         </div>
         <div class="presentation-img-content">
-            <img class="mov-version-hidden" src="project-assets/presentation-section/card-1.png" alt="Choose your card" />
-            <img class="mov-version-hidden" src="project-assets/presentation-section/card-2.png" alt="Project has been accepted" />
-            <img src="project-assets/presentation-section/hero-image.png" alt="Profile image with a yellow cercle at the background" class="presentation-img-main" />
+            <img class="presentation-img-card-1 mov-version-hidden" src="project-assets/presentation-section/card-1.png" alt="Choose your card" />
+            <img class="presentation-img-card-2 mov-version-hidden" src="project-assets/presentation-section/card-2.png" alt="Project has been accepted" />
+            <img class="presentation-img-main" src="project-assets/presentation-section/hero-image.png" alt="Profile image with a yellow cercle at the background" />
         </div>
     </div>
     <!-- 2. Section LOGOS -->
@@ -126,18 +126,18 @@
                 </div>
             </div>
         </div>
-        <img class="mov-version-hidden" src="project-assets/testimonial-section/memoji-1.png" alt="Smiling with fingers crossed emoji" />
-        <img class="mov-version-hidden" src="project-assets/testimonial-section/memoji-2.png" alt="Winking the eye emoji" />
-        <img class="mov-version-hidden" src="project-assets/testimonial-section/memoji-3.png" alt="Thumb up emoji" />
-        <img class="mov-version-hidden" src="project-assets/testimonial-section/memoji-4.png" alt="Party happy emoji" />
+        <img class="mov-version-hidden emoji emoji-top-left" src="project-assets/testimonial-section/memoji-1.png" alt="Smiling with fingers crossed emoji" />
+        <img class="mov-version-hidden emoji emoji-bottom-right" src="project-assets/testimonial-section/memoji-2.png" alt="Winking the eye emoji" />
+        <img class="mov-version-hidden emoji emoji-bottom-left" src="project-assets/testimonial-section/memoji-3.png" alt="Thumb up emoji" />
+        <img class="mov-version-hidden emoji emoji-top-right" src="project-assets/testimonial-section/memoji-4.png" alt="Party happy emoji" />
     </div>
     <!-- 5. Section SERVICES -->
-    <div class="section-box">
+    <div class="section-box section-box-services">
         <div>
             <h2>Our Services</h2>
             <div class="services-grid">
                 <div class="services-card">
-                    <img src="project-assets/services-section/icons/1.svg" alt="Icon" />
+                    <div class="services-icon icon-1"></div>
                     <div class="services-text">
                         <h3>User Interface Design</h3>
                         <p>
@@ -147,7 +147,7 @@
                     </div>
                 </div>
                 <div class="services-card">
-                    <img src="project-assets/services-section/icons/2.svg" alt="Icon" />
+                    <div class="services-icon icon-2"></div>
                     <div class="services-text">
                         <h3>User Experience Design</h3>
                         <p>
@@ -157,7 +157,7 @@
                     </div>
                 </div>
                 <div class="services-card">
-                    <img src="project-assets/services-section/icons/3.svg" alt="Icon" />
+                    <div class="services-icon icon-3"></div>
                     <div class="services-text">
                         <h3>Aplication Development</h3>
                         <p>
@@ -175,10 +175,10 @@
             <h2>Do you have any questions?</h2>
             <p>Let us help you!</p>
             <div class="form-buttons-box">
-                <form class="form-buttons" action="">
+                <form class="form-buttons" id="submit" action="">
                     <div class="imput-text-button">
                         <div class="imput-text-button-icon"></div>
-                        <input type="email" minlength="6" maxlength="200" placeholder="Enter your email" class="imput-text-button-text" required />
+                        <input id="email-suscribe" type="email" minlength="6" maxlength="200" placeholder="Enter your email" class="imput-text-button-text" required />
                     </div>
                     <input type="submit" value="Suscribe" data-wait="Please wait..." class="suscribe-button" />
                 </form>
@@ -187,7 +187,7 @@
     </div>
     <!-- 7. FOOTER  -->
     <footer class="section-box footer-box">
-        <div class="section-box-box">
+        <div class="section-box-box footer-box-box">
             <div class="footer-logo">
                 <img src="project-assets/logos/circle.svg" alt="Circle logo" />
                 <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
@@ -202,7 +202,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="/js/suscribe.js"></script>
     <script src="/js/fetchData.js"></script>
     <script src="/js/nav.js"></script>
 </body>

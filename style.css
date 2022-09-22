@@ -80,6 +80,7 @@
      margin-top: 60px;
      padding: 0px 30px;
      box-sizing: border-box;
+     max-width: 1100px;
  }
  
  .no-margin {
@@ -87,7 +88,6 @@
  }
  
  .section-box-box {
-     max-width: 1100px;
      margin-right: auto;
      margin-left: auto;
      display: flex;
@@ -141,6 +141,10 @@
  }
  
  .nav-link:hover {
+     color: #0082f3;
+ }
+ 
+ .current-link {
      color: #0082f3;
  }
  /* menu desplegable */
@@ -231,6 +235,7 @@
      line-height: 20px;
      cursor: pointer;
      text-decoration: none;
+     padding: 15px 30px;
  }
  
  .presentation-img-content {
@@ -332,6 +337,7 @@
      background-position: 50% 50%;
      background-size: cover;
      background-repeat: no-repeat;
+     max-width: 1320px;
  }
  
  .section-client {
@@ -393,6 +399,10 @@
  }
  /* 5. Section SERVICES */
  
+ .section-box-services {
+     margin-top: 40px;
+ }
+ 
  .services-grid {
      display: grid;
      grid-auto-columns: 1fr;
@@ -411,16 +421,32 @@
      max-width: 100%;
  }
  
- .services-card img {
-     flex: 0 0 auto;
-     width: 40px;
-     height: 40px;
+ .services-icon {
+     width: 80px;
+     height: 80px;
      margin-top: 40px;
      margin-left: 40px;
      padding-bottom: 0px;
      padding-left: 0px;
      border-radius: 50%;
      background-color: #ecf7ff;
+     background-position: 50% 50%;
+     background-size: auto;
+     background-repeat: no-repeat;
+     right: auto;
+     bottom: auto;
+ }
+ 
+ .icon-1 {
+     background-image: url(project-assets/services-section/icons/1.svg);
+ }
+ 
+ .icon-2 {
+     background-image: url(project-assets/services-section/icons/2.svg);
+ }
+ 
+ .icon-3 {
+     background-image: url(project-assets/services-section/icons/3.svg);
  }
  
  .services-text {
@@ -438,6 +464,7 @@
  .section-form {
      background-color: #ffc600;
      height: 500px;
+     max-width: 1320px;
  }
  
  .section-form-in {
@@ -459,9 +486,6 @@
  }
  
  .form-buttons-box {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
      margin-top: 50px;
  }
  
@@ -559,6 +583,8 @@
  .footer-links a {
      font-size: 17px;
      text-decoration: none;
+     color: #072ac8;
+     ;
  }
  
  .footer-box {
@@ -692,16 +718,32 @@
  }
  /* HIDE FOR MOVILE VERSION */
  
- .mov-version-hidden {
-     display: none;
+ @media only screen and (max-width: 768px) {
+     .mov-version-hidden {
+         display: none;
+     }
  }
  /* ----FORMATO DESKTOP---------------------- */
  
  @media only screen and (min-width: 768px) {
-     /* SHOW FOR DESKTOP VERSION */
-     .mov-version-hidden {
-         display: contents;
+     /* general styles */
+     .section-box {
+         padding-top: 100px;
+         margin-right: auto;
+         margin-left: auto;
      }
+     h1 {
+         font-size: 60px;
+         text-align: left;
+     }
+     h2 {
+         font-size: 40px;
+         text-align: left;
+     }
+     h4 {
+         font-size: 24px;
+     }
+     /* header MENU */
      header {
          margin-top: 70px;
      }
@@ -729,5 +771,224 @@
          padding: 15px 30px;
          font-size: 17px;
          display: block;
+     }
+     /* 1. Section PRESENTATION */
+     .presentation-box {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: row;
+     }
+     .presentation-text-content {
+         align-items: flex-start;
+         flex-wrap: nowrap;
+         justify-content: space-around;
+         text-align: left;
+         max-width: 530px;
+     }
+     .presentation-text-content p {
+         text-align: left;
+         font-size: 20px;
+     }
+     .presentation-button-content {
+         display: flex;
+         flex-direction: row-reverse;
+         align-content: center;
+     }
+     .presentation-button-content a {
+         padding-left: 0;
+     }
+     .presentation-img-content {
+         position: relative;
+     }
+     .presentation-img-card-1 {
+         position: absolute;
+         left: -16vh;
+         top: 0vw;
+         right: auto;
+         bottom: auto;
+         max-width: 300px;
+     }
+     .presentation-img-card-2 {
+         position: absolute;
+         left: auto;
+         top: auto;
+         right: -9vw;
+         bottom: -13vw;
+         max-width: 300px;
+     }
+     /* 2. Section LOGOS */
+     .logos-container {
+         margin-top: 0px;
+     }
+     .section-logos-grid {
+         grid-column-gap: 16px;
+         grid-row-gap: 16px;
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+         grid-template-rows: auto;
+     }
+     /* 3. Section PROJECTS */
+     .container-projects-grid {
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: auto auto;
+         margin-top: 50px;
+     }
+     /* 4. Section CLIENT */
+     .client-box {
+         margin-top: 200px;
+         padding-top: 0;
+         position: relative;
+     }
+     .section-client {
+         height: 622px;
+     }
+     .section-client h2 {
+         text-align: center;
+         max-width: 100%;
+     }
+     .emoji {
+         width: 150px px;
+         height: 150px;
+     }
+     .emoji-top-left {
+         position: absolute;
+         left: 0%;
+         top: 0%;
+         right: auto;
+         bottom: auto;
+         margin-top: 5%;
+         margin-left: 10%;
+     }
+     .emoji-bottom-right {
+         position: absolute;
+         left: auto;
+         top: auto;
+         right: 0%;
+         bottom: 0%;
+         margin-right: 10%;
+         margin-bottom: 5%;
+     }
+     .emoji-bottom-left {
+         position: absolute;
+         left: 0%;
+         top: auto;
+         right: auto;
+         bottom: 0%;
+         margin-bottom: 5%;
+         margin-left: 10%;
+     }
+     .emoji-top-right {
+         position: absolute;
+         left: auto;
+         top: 0%;
+         right: 0%;
+         bottom: auto;
+         margin-top: 5%;
+         margin-right: 10%;
+     }
+     /* 5. Section SERVICES */
+     .services-grid {
+         margin-top: 70px;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: auto;
+     }
+     .services-card {
+         max-width: 340px;
+     }
+     /* 6. Section FORM */
+     .form-buttons-box {
+         margin-top: 50px;
+     }
+     .form-buttons {
+         flex-direction: row;
+         align-items: flex-end;
+         align-content: flex-start;
+         flex-wrap: nowrap;
+     }
+     .imput-text-button input {
+         width: 393px;
+     }
+     .suscribe-button {
+         margin-left: 20px;
+         padding-right: 60px;
+         padding-left: 60px;
+     }
+     /* 7. FOOTER */
+     .footer-box-box {
+         flex-direction: row;
+         align-items: stretch;
+     }
+     .footer-logo {
+         align-items: flex-start;
+     }
+     .footer-logo p {
+         text-align: left;
+     }
+     /* CONTACT.HTML */
+     .contact-box-box {
+         margin-top: 20px;
+         align-items: stretch;
+     }
+     .contact-principal-title {
+         font-size: 60px;
+         margin-bottom: 80px;
+         line-height: 110%;
+     }
+     .contact-form {
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+         grid-template-rows: auto auto auto auto auto auto;
+     }
+     .contact-text {
+         grid-column-start: span 6;
+         grid-column-end: span 6;
+     }
+     .contact-input-text {
+         padding-left: 20px;
+     }
+     .form-name {
+         grid-row-start: span 1;
+         grid-row-end: span 1;
+         grid-column-start: span 6;
+         grid-column-end: span 6;
+     }
+     .form-email {
+         grid-row-start: span 1;
+         grid-row-end: span 1;
+         grid-column-start: span 3;
+         grid-column-end: span 3;
+     }
+     .form-phone {
+         grid-row-start: span 1;
+         grid-row-end: span 1;
+         grid-column-start: span 3;
+         grid-column-end: span 3;
+     }
+     .form-text {
+         grid-row-start: span 3;
+         grid-row-end: span 3;
+         grid-column-start: span 6;
+         grid-column-end: span 6;
+     }
+     .suscribe-button {
+         grid-row-start: span 3;
+         grid-row-end: span 3;
+         grid-column-start: span 6;
+         grid-column-end: span 6;
+         margin-left: 0px;
+     }
+     /* PROJECTS.HTML */
+     .projects-principal-title {
+         font-size: 60px;
+         margin: 0;
+     }
+     .contact-subtitle-box {
+         margin-bottom: 80px;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: self-end;
+     }
+     .contact-subtitle-box h4 {
+         margin: 0;
      }
  }
