@@ -38,6 +38,12 @@ Objetivo de hoy:
 3. Acabar la adaptación a desktop.
 4. Comprovar que todo funciona en los 2 dispositivos.
 5. Hacer el deployment en la web de Netlify.
+Finalmente he podido acabar casi todo menos algunas cosillas que me fallan del css.
 
 
 Dia 5 - 23 septiembre
+
+Objetivo de hoy:
+1. Comprovar que todo funciona en los 2 dispositivos.
+2. Hacer el deployment
+3. Hacer la presentación
