@@ -7,7 +7,7 @@ Me ha supuesto un reto empezar con la versión para móvil, ya que hay cosas que
 Creo intuir que en la versión desktop me va a costar encajar la info para que se vea bien.
 Finalmente las cosas que desaparecen lo he podido arreglar con display:none; pero he tenido que revisar el selector de specificity de las classes.
 De momento solo he podido avanzar con la home, todavia sin acabar, también me faltarán las demás páginas.
-Al trabajar html y css la sensación de no acabar nada es un poco frustrante, porque parece que no abance.
+Al trabajar html y css la sensación de no acabar nada es un poco frustrante, porque parece que no avance.
 
 
 Dia 2 - 20 septiembre
